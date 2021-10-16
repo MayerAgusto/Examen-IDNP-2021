@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Vista.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="259dp"
+        android:layout_height="33dp"
+        android:text="Aplicacion (Usuario) "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="42dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="119dp"
+            android:layout_height="39dp"
+            android:layout_margin="20dp"
+            android:text="BIENVENIDO"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="goToRegister"
+            android:text="Registrarse"
+            app:icon="@android:drawable/ic_menu_myplaces"
+            tools:layout_editor_absoluteX="77dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="goToTravel"
+            android:text="A donde ir"
+            app:icon="@android:drawable/ic_dialog_map"
+            tools:layout_editor_absoluteX="77dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="258dp"
+            android:layout_height="251dp"
+            android:layout_margin="20dp"
+            android:text="Viajes: "
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
